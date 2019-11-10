@@ -1,0 +1,55 @@
+.breadcrumb {
+  background-color: #ffffff!important;
+  font-size: 12px!important;
+  font-weight: 400;
+  padding-left: 0px!important;
+  margin-top: 10px;
+}
+
+#breadCrumbLink {
+  color: #5f656d!important;
+  padding: 0px!important;
+}
+
+h1 {
+  font-size: 34px!important;
+  font-weight: 600!important;
+  margin-bottom: 15px!important;
+}
+
+#diensten-text {
+  margin-bottom: 30px!important;
+}
+
+#diensten-text > span {
+  color: #ffe718;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+#advies, #regelgeving, #nieuwbouw {
+  display: inline;
+}
+#advies:hover + .dropdown_advies {
+  display: inline-block;
+}
+#regelgeving:hover + .dropdown_regelgeving {
+  display: inline-block;
+}
+#nieuwbouw:hover + .dropdown_nieuwbouw {
+  display: inline-block;
+}
+
+.dropdown_advies, .dropdown_nieuwbouw, .dropdown_regelgeving {
+  padding: 3px 2px;
+  margin-top: 11px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  max-width: 300px;
+  z-index: 1;
+  color: rgb(230, 230, 230);
+  background-color: rgb(120, 120, 120)
+}
