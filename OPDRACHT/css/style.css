@@ -80,28 +80,62 @@ img[src="../img/footer.jpg"] {
   max-height: 250px;
 }
 
-#banners > div > img {
+#banner_1, #banner_2, #banner_3 {
+  background-color: black;
+  color: white;
+  max-height: 220px!important;
   margin: 10px;
 }
 
-.overlay {
-  position: relative;
-  bottom: 230px;
-  left: 10px;
-  width: 300px;
-  height: 220px;
-  background-color: #222931;
-  opacity: 0;
-  z-index: 0;
+#banner_1 h2 {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 86%;
+  left: 33%;
+  transform: translate(-50%, -50%);
 }
 
-.overlay:hover {
-  opacity: 0.7;
+#banner_2 h2 {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 86.7%;
+  left: 49.8%;
+  transform: translate(-50%, -50%);
+}
+
+#banner_3 h2 {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 86.7%;
+  left: 66.5%;
+  transform: translate(-50%, -50%);
+}
+
+#banner_1:hover h2 {
+  display: block;
+}
+
+#banner_2:hover h2 {
+  display: block;
+}
+
+#banner_3:hover h2 {
+  display: block;
+}
+
+#banner_1>img, #banner_2>img, #banner_3>img {
+  margin: 0px!important;
+}
+
+#banner_1>img:hover, #banner_2>img:hover, #banner_3>img:hover {
+  opacity: 0.4;
 }
 
 .text {
   color: white;
-  opacity: 1;
   z-index: 1;
   position: absolute;
   top: 50%;
